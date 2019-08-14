@@ -114,4 +114,4 @@ dmypy.json
 .pyre/
 
 # Dataset 
-./dataset
+dataset/*
