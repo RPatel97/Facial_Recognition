@@ -9,11 +9,14 @@ faceRecognizer = cv2.face.LBPHFaceRecognizer_create()
 faceRecognizer.read('trainer/trainer.yml')
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
+eyeCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tree_eyeglasses.xml')
+
 recognizerFont = cv2.FONT_HERSHEY_DUPLEX
 
 facialId = 0
 
-nameID = ['Unknown', 'Rish', 'John']
+# Add in name ids for new faces here
+nameID = ['Unknown', 'User1', 'User2']
 
 # Video Capture objecy with the device index of the camera
 videoCapture = cv2.VideoCapture(0)
@@ -66,6 +69,15 @@ while (True):
             # Put text over the rectangle with the facial id and the confidence of correctness
             cv2.putText(frame, str(facialId), (x-5, y-5), recognizerFont, 1, (255,0,0), 2)
             cv2.putText(frame, str(confidence), (x, y+30), recognizerFont, 1, (255,0,0), 1)
+
+            roi_gray = gray[y:y+h, x:x+w]
+            roi_color = frame[y:y+h, x:x+w]
+            
+            # To find eyes in the face
+            eyes = eyeCascade.detectMultiScale(roi_gray)
+            for (ex, ey, ew, eh) in eyes:
+                cv2.rectangle(roi_color, (ex,ey), (ex+ew, ey+eh), (0,255,0), 2)
+
 
         cv2.imshow('Recognize', frame)
 
