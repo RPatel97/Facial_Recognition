@@ -115,3 +115,6 @@ dmypy.json
 
 # Dataset 
 dataset/*
+
+# Training data
+trainer/*

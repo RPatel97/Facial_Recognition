@@ -11,7 +11,7 @@ videoCapture.set(3, 480) # Width
 videoCapture.set(4, 480) # Height
 
 facialCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-eyeCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+eyeCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tree_eyeglasses.xml')
 
 while(True):
 
