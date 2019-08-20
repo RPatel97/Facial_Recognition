@@ -30,4 +30,4 @@ Learning ML and its basic concepts, via face recognition.
 ## Example of the face and eye recognize
 
 - Sample output of the face recognition
-![Sample](\Sample.JPG)
+![Sample Image](Sample.JPG)
