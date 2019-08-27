@@ -34,5 +34,4 @@ Learning ML and its basic concepts, via face recognition.
     ```python .\face_recognition.py```
 
 ## Example of the face and eye recognize
-Sample output of the face recognition
-![Sample Image](Sample.JPG)
+![Sample output of the face recognition](Sample.JPG)
