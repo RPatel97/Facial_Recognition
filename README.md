@@ -35,4 +35,5 @@ Learning ML and its basic concepts, via face recognition.
 
 ## Example of the face and eye recognize
 ![](Sample.JPG)
-*Sample output of the face recognition*
+|:--:| 
+| *Sample output of the face recognition* |
