@@ -24,7 +24,7 @@ Learning ML and its basic concepts, via face recognition.
     ```python .\dataset_generation```
 
 #### dataset_training.py
-- Uses the x, y, w, and h coordinates of the faces from the dataset and their labels with the cooresponding face. Uses the Local binary pattern history facerecognizer to train and al the data gets writtern to trainer folder with the necessary histogram data needed for recognition. To train the dataset the following command should be used:
+- Uses the x, y, w, and h coordinates of the faces from the dataset and their labels with the cooresponding face. Uses the Local binary pattern histogram facerecognizer to train and all the data gets writtern to trainer folder with the necessary histogram data needed for recognition. To train the dataset the following command should be used:
 
     ```python .\dataset_training.py```
 
