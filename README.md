@@ -8,7 +8,7 @@ Learning ML and its basic concepts, via face recognition.
 - Contains all the required libraries necessary for to run the code. These libraries are:
     1. opencv-python==4.0.0.21
     2. numpy==1.16.2
-    3. Pillow==5.4.1
+    3. Pillow==8.1.1
 
 #### run_script.bat
 - A batch file for checking requirements and to run the python file ```trial_run.py```
